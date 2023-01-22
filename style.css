@@ -1,0 +1,334 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+}
+/*:::::Inicio estilo encabezado*/
+header{
+    background: rgba(58, 57, 57, 0.498);
+    height: 120px;
+    width: 100%;
+    border-bottom: 5px solid rgb(255, 221, 0);
+}
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo{
+    height: 80px;
+    width: 240px;
+}
+
+header ul{
+    float: right;
+    margin-right: 20px;
+}
+
+header ul li{
+    display: inline-block;
+    line-height: 120px;
+    margin: 0 5px;
+}
+
+header ul li a{
+    color: white;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+li a.active, li a:hover{
+    background: rgb(255, 221, 0);
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 120px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+/*:::::Fin estilo encabezado*/
+/*:::::Inicio estilo contenido*/
+section{
+    background: url(img/carpinteria.img) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+section article {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    padding: 160px;
+    line-height: 100px;
+    text-transform: uppercase;
+}
+/*:::::Inicio responsive*/
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    header ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    header ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    header ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #chech:checked~ul{
+        left:0;
+    }
+    section article {
+        font-size: 25px;
+        padding: 180px;
+        line-height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*:::::Fin responsive encabezado y contenido*/
+/*:::::Inicio estilo pie de pagina*/
+footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+    border-top: 5px solid rgb(255, 221, 0);
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 0px 0px;
+    inset-block: center;
+    line-height: 20px;
+}
+
+.pie-pagina .grupo-1 .box h3 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    transform: all 300ms ease;
+    font-size: 40px;
+    text-align: center;
+}
+
+div .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: rgb(255, 221, 0);
+}
+
+.pie-pagina .grupo-2 {
+    background-color: rgba(58, 57, 57, 0.498);
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+/*:::::Fin estilo pie de pagina*/
+/*:::::Inicio responsive pie de pagina*/
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 0px 0px;
+    }
+}
+/*:::::Fin responsive pie de pagina*/
+/*:::::inicio estilo "servicios" sin terminar*/
+main{
+    background: url(img/carpinteria.img) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+main article {
+    font-size: 20px;
+    padding: 20px;
+    color: #fff;
+    line-height: 40px;
+}
+
+.boxImagenes {
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    background-size: cover;
+    border: 5px ridge rgb(255, 221, 0);
+    animation-name: boxAnimate;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+}
+
+@keyframes boxAnimate {
+    0% {
+        background-image: url(img/titulo.png);
+    }
+    10% {
+        background-image: url(img/photo2.jpeg);
+    }
+    20% {
+        background-image: url(img/photo3.jpeg);
+    }
+    30% {
+        background-image: url(img/photo4.jpeg);
+    }
+    40% {
+        background-image: url(img/photo5.jpeg);
+    }
+    50% {
+        background-image: url(img/photo7.jpeg);
+    }
+    60% {
+        background-image: url(img/photo8.jpeg);
+    }
+    70% {
+        background-image: url(img/photo9.jpeg);
+    }
+    80% {
+        background-image: url(img/photo11.jpeg);
+    }
+    90% {
+        background-image: url(img/photo13.jpeg);
+    }
+    100% {
+        background-image: url(img/photo1.jpeg);
+    }
+}
+
+p {
+    width: 50%;
+}
+/*:::::inicio estilo "trabajos" sin terminar*/
+.fotoPerfil {
+    width: 400px;
+    height: 400px;
+}
+/*:::::inicio estilo "trabajos" sin terminar*/
+img {
+    width: 300px;
+    width: 100%;
+    height: 300px;
+    border: 5px ridge rgb(255, 221, 0);
+}
+
+.row {
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 25%;
+    padding: 5px;
+}
+
+.column img {
+    margin-top: 5px;
+}
+
+@media (max-width:800px) {
+    .column {
+        flex: 50%;
+    }
+}
+
+@media (max-width:800px) {
+    .column {
+        flex: 100%;
+    }
+}
+/*:::::fin estilo "trabajos"*/ 
+
+/*:::::inicio estilo "contacto" sin terminar*/
+.encontranos a {
+    color: rgb(255, 221, 0);
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+fieldset {
+    border: 3px solid rgb(255, 221, 0);
+}
+
+fieldset legend {
+    margin-left: 5px;
+}
+
+.datos {
+    margin-left: 10px;
+}
+
+.cajaDatos {
+    margin-left: 10px;
+}
+
+/*:::::fin estilo "contacto"*/ 
