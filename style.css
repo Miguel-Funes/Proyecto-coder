@@ -19,6 +19,11 @@ header{
     padding: 20px 50px;
 }
 
+.animate__animated{
+    height: 80px;
+    width: 240px;
+}
+
 .logo{
     height: 80px;
     width: 240px;
