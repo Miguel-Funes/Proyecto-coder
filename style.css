@@ -217,8 +217,15 @@ main{
 main article {
     font-size: 20px;
     padding: 20px;
-    color: #fff;
+    color: black;
     line-height: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 830px 830px;
+    justify-items: center;
+    align-items: center;
 }
 
 .boxImagenes {
@@ -247,7 +254,7 @@ main article {
         background-image: url(img/photo4.jpeg);
     }
     40% {
-        background-image: url(img/photo5.jpeg);
+        background-image: url(img/photo1.jpeg);
     }
     50% {
         background-image: url(img/photo7.jpeg);
@@ -265,12 +272,13 @@ main article {
         background-image: url(img/photo13.jpeg);
     }
     100% {
-        background-image: url(img/photo1.jpeg);
+        background-image: url(img/photo5.jpeg);
     }
 }
 
 p {
-    width: 50%;
+    width: 90%;
+    padding-left: 20px;
 }
 /*:::::inicio estilo "trabajos" sin terminar*/
 .fotoPerfil {
