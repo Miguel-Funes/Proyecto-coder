@@ -53,6 +53,9 @@ li a.active, li a:hover{
     transition: .5s;
 }
 
+ul li a {
+    text-decoration: none;
+}
 .checkbtn{
     font-size: 30px;
     color: white;
@@ -129,6 +132,7 @@ section article {
         flex-direction: column;
         align-items: center;
     }
+
 }
 /*:::::Fin responsive encabezado y contenido*/
 /*:::::Inicio estilo pie de pagina*/
@@ -156,6 +160,7 @@ footer {
     font-size: 22px;
     text-align: center;
     margin-top: 10px;
+    line-height: 10px;
 }
 
 .pie-pagina .grupo-1 .box p {
@@ -182,6 +187,12 @@ div .box {
     align-items: center;
 }
 
+div .box p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .pie-pagina .grupo-1 .red-social a:hover {
     color: rgb(255, 221, 0);
 }
@@ -196,6 +207,10 @@ div .box {
 .pie-pagina .grupo-2 small {
     font-size: 15px;
 }
+
+div a {
+    text-decoration: none;
+}
 /*:::::Fin estilo pie de pagina*/
 /*:::::Inicio responsive pie de pagina*/
 @media screen and (max-width:800px){
@@ -205,6 +220,7 @@ div .box {
         grid-gap: 30px;
         padding: 0px 0px;
     }
+
 }
 /*:::::Fin responsive pie de pagina*/
 /*:::::inicio estilo "servicios" sin terminar*/
@@ -221,16 +237,9 @@ main article {
     line-height: 40px;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 830px 830px;
-    justify-items: center;
-    align-items: center;
-}
-
 .boxImagenes {
-    width: 600px;
-    height: 400px;
+    width: 90vh;
+    height: 50vh;
     background-color: white;
     background-size: cover;
     border: 5px ridge rgb(255, 221, 0);
