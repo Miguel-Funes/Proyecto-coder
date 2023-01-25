@@ -249,6 +249,16 @@ main article {
     animation-timing-function: linear;
 }
 
+div a {
+    display: flex;
+    justify-content: center;
+}
+
+div .flex-box {
+    display: flex;
+    justify-content: center;
+}
+
 @keyframes boxAnimate {
     0% {
         background-image: url(img/titulo.png);
