@@ -31,7 +31,6 @@
     </header> <!--Fin encabezado-->
     <main> <!--Inicio contenido-->
         <article class="container">
-            <div class="row">
             <h2>Donde encontrarnos!</h2>
                 <div class="encontranos"> <!--Ubicacion y contacto-->
                     <div>
@@ -45,34 +44,35 @@
                     </div>
                 </div>
             <h2>Escribenos, queremos conocerte!</h2>
-                <form> <!--Inicio formulario de contacto--> 
+                <form class="row"> <!--Inicio formulario de contacto--> 
                     <legend> Datos de contacto </legend>
-                        <div class="mb-2"></div>
-                            <label for="Sexo">Sexo</label>
-                            <input type="radio" name="Sexo" id="Masculino" value="Masculino">Masculino
-                            <input type="radio" name="Sexo" id="Femenino" value="Femenino">Femenino
-                        <div class="mb-2"></div>
-                            <label for="Nombre">Nombre</label>
-                            <input type="text" class="form-control" name="Nombre" placeholder="Ej:Nombre"></div>
-                        <div class="mb-2"></div>
-                            <label for="Apellido">Apellido</label>
-                            <input type="text" class="form-control" name="Apellido" placeholder="Ej:Apellido"></div>
-                        <div class="mb-2"></div>
-                            <label for="Direccion">Direccion</label>
-                            <input type="text" class="form-control" name="Direccion" placeholder="Ej:Calle Nº - Barrio"></div>
-                        <div class="mb-2"></div>
-                            <label for="Correo">Correo electronico</label>
-                            <input type="text" class="form-control" name="Correo" placeholder="Ej:name@ejemplo.com"></div>
-                        <div class="mb-2"></div>
-                            <label for="Telefono">Telefono</label>
-                            <input type="text" class="form-control" name="Telefono" placeholder="Ej:+54 123 4567890"></div>
-                        <div class="mb-2">
-                            <label for="Textarea">Mensaje</label>
-                            <textarea class="form-control" rows="3" placeholder="Comentario"></textarea>
-                        <div>
-                        <div class="mb-2">
-                            <button class="btn btn-primary">Enviar</button> 
-                            <button type="reset" class="btn btn-primary">Borrar</button>
+                        <div class="col-12 col-xl-6">
+                            <div class="mb-2"></div>
+                                <label for="Nombre">Nombre</label>
+                                <input type="text" class="form-control" name="Nombre" placeholder="Ej:Nombre">    
+                            <div class="mb-2"></div>
+                                <label for="Apellido">Apellido</label>
+                                <input type="text" class="form-control" name="Apellido" placeholder="Ej:Apellido"> 
+                            <div class="mb-2"></div>
+                                <label for="Correo">Correo electronico</label>
+                                <input type="text" class="form-control" name="Correo" placeholder="Ej:name@ejemplo.com">       
+                            <div class="mb-2"></div>
+                                <label for="Telefono">Telefono</label>
+                                <input type="text" class="form-control" name="Telefono" placeholder="Ej:+54 123 4567890">
+                            <div class="mb-2"></div>
+                                <label for="Sexo">Sexo</label>
+                                <input type="radio" name="Sexo" id="Masculino" value="Masculino">Masculino
+                                <input type="radio" name="Sexo" id="Femenino" value="Femenino">Femenino
+                        </div>
+                        <div class="col-12 col-xl-6">  
+                            <div class="mb-2">
+                                <label for="Textarea">Mensaje</label>
+                                <textarea class="form-control" rows="12" placeholder="Comentario"></textarea>
+                            <div>
+                             <div class="mb-2">
+                                    <button class="btn btn-primary">Enviar</button> 
+                                    <button type="reset" class="btn btn-primary">Borrar</button>
+                            </div>
                         </div>
                 </form> <!--Fin formulario de contacto-->
             </div>
