@@ -7,7 +7,7 @@
     font-family: 'Public Sans', sans-serif;
 }
 /*:::::Inicio estilo encabezado*/
-header{
+nav{
     background: rgba(58, 57, 57, 0.498);
     height: 120px;
     width: 100%;
@@ -29,18 +29,18 @@ header{
     width: 240px;
 }
 
-header ul{
+nav ul{
     float: right;
     margin-right: 20px;
 }
 
-header ul li{
+nav ul li{
     display: inline-block;
     line-height: 120px;
     margin: 0 5px;
 }
 
-header ul li a{
+nav ul li a{
     color: white;
     font-size: 18px;
     padding: 7px 13px;
@@ -50,7 +50,7 @@ header ul li a{
 
 li a.active, li a:hover{
     background: rgb(255, 221, 0);
-    transition: .5s;
+    transition: .3s;
 }
 
 ul li a {
@@ -66,7 +66,7 @@ ul li a {
     display: none;
 }
 
-#check{
+ #check{
     display: none;
 }
 /*:::::Fin estilo encabezado*/
@@ -90,7 +90,7 @@ section article {
     .enlace{
         padding-left: 20px;
     }
-    header ul li a{
+    nav ul li a{
         font-size: 16px;
     }
 }
@@ -109,19 +109,19 @@ section article {
         text-align: center;
         transition: all .5s;
     }
-    header ul li{
+    nav ul li{
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
-    header ul li a{
+    nav ul li a{
         font-size: 20px;
     }
     li a:hover, li a.active{
         background: none;
         color: red;
     }
-    #chech:checked~ul{
+    #chech:checked ~ ul{
         left:0;
     }
     section article {
@@ -299,12 +299,12 @@ p {
     width: 90%;
     padding-left: 20px;
 }
-/*:::::inicio estilo "trabajos" sin terminar*/
+/*:::::inicio estilo "sobremi"*/
 .fotoPerfil {
     width: 400px;
     height: 400px;
 }
-/*:::::inicio estilo "trabajos" sin terminar*/
+/*:::::inicio estilo "trabajos"*/
 img {
     width: 300px;
     width: 100%;
@@ -340,7 +340,7 @@ img {
 }
 /*:::::fin estilo "trabajos"*/ 
 
-/*:::::inicio estilo "contacto" sin terminar*/
+/*:::::inicio estilo "contacto"*/
 .encontranos a {
     color: white;
     padding-left: 25px;
