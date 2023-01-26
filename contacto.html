@@ -30,8 +30,9 @@
             </ul>
     </header> <!--Fin encabezado-->
     <main> <!--Inicio contenido-->
-        <article>
-            <h2>Encontranos en:</h2>
+        <article class="container">
+            <div class="row">
+            <h2>Donde encontrarnos!</h2>
                 <div class="encontranos"> <!--Ubicacion y contacto-->
                     <div>
                         <a href="#" class="fa-sharp fa-solid fa-location-dot"> Esta es mi ubicacion</a>
@@ -44,28 +45,37 @@
                     </div>
                 </div>
             <h2>Escribenos, queremos conocerte!</h2>
-                <form> <!--Inicio formulario de contacto-->
-                    <fieldset> 
-                        <legend> Datos de contacto </legend>
-                            <div class="datos"> Nombre: </div>
-                                <div class="cajaDatos"> <input type="text" name="Usuario"></div>
-                            <div class="datos"> Apellido: </div>
-                                <div class="cajaDatos"> <input type="text" name="Usuario"></div>
-                            <div class="datos"> Direccion: </div>
-                                <div class="cajaDatos"> <input type="text" name="Usuario"></div>
-                            <div class="datos"> Email: </div>
-                                <div class="cajaDatos"> <input type="email" name="Usuario"></div>
-                            <div class="datos"> Telefono de contacto: </div>
-                                <div class="cajaDatos"> <input type="text" name="Usuario"></div>
-                            <br>
-                                <textarea name="textarea" rows="10" cols="50">Comentarios</textarea>
-                            <br><br>
-                                <span>
-                                    <input type="Submit" value="Enviar"/>
-                                    <input type="Reset" value="Limpiar"/>
-                                </span>
-                    </fieldset>
+                <form> <!--Inicio formulario de contacto--> 
+                    <legend> Datos de contacto </legend>
+                        <div class="mb-2"></div>
+                            <label for="Sexo">Sexo</label>
+                            <input type="radio" name="Sexo" id="Masculino" value="Masculino">Masculino
+                            <input type="radio" name="Sexo" id="Femenino" value="Femenino">Femenino
+                        <div class="mb-2"></div>
+                            <label for="Nombre">Nombre</label>
+                            <input type="text" class="form-control" name="Nombre" placeholder="Ej:Nombre"></div>
+                        <div class="mb-2"></div>
+                            <label for="Apellido">Apellido</label>
+                            <input type="text" class="form-control" name="Apellido" placeholder="Ej:Apellido"></div>
+                        <div class="mb-2"></div>
+                            <label for="Direccion">Direccion</label>
+                            <input type="text" class="form-control" name="Direccion" placeholder="Ej:Calle Nº - Barrio"></div>
+                        <div class="mb-2"></div>
+                            <label for="Correo">Correo electronico</label>
+                            <input type="text" class="form-control" name="Correo" placeholder="Ej:name@ejemplo.com"></div>
+                        <div class="mb-2"></div>
+                            <label for="Telefono">Telefono</label>
+                            <input type="text" class="form-control" name="Telefono" placeholder="Ej:+54 123 4567890"></div>
+                        <div class="mb-2">
+                            <label for="Textarea">Mensaje</label>
+                            <textarea class="form-control" rows="3" placeholder="Comentario"></textarea>
+                        <div>
+                        <div class="mb-2">
+                            <button class="btn btn-primary">Enviar</button> 
+                            <button type="reset" class="btn btn-primary">Borrar</button>
+                        </div>
                 </form> <!--Fin formulario de contacto-->
+            </div>
         </article>
     </main> <!--Fin del contenido-->
     <footer> <!--Inicio pie de pagina-->

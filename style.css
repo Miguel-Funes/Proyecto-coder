@@ -342,7 +342,7 @@ img {
 
 /*:::::inicio estilo "contacto" sin terminar*/
 .encontranos a {
-    color: rgb(255, 221, 0);
+    color: white;
     padding-left: 25px;
     padding-top: 15px;
 }
@@ -355,12 +355,8 @@ fieldset legend {
     margin-left: 5px;
 }
 
-.datos {
-    margin-left: 10px;
-}
-
-.cajaDatos {
-    margin-left: 10px;
+legend {
+    color: rgb(255, 221, 0);
 }
 
 /*:::::fin estilo "contacto"*/ 
