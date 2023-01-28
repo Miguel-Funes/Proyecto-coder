@@ -95,16 +95,16 @@ section article {
     }
 }
 
-@media (max-width: 800px){
+@media screen and (max-width: 800px){
     .checkbtn{
         display: block;
     }
-    ul{
-        position: fixed;
+    .nav-menu{
+        position: absolute;
         width: 100%;
-        height: 100vh;
-        background: white;
-        top: 80px;
+        height: 65vh;
+        background: rgb(255, 221, 0);
+        top: 120px;
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -119,11 +119,12 @@ section article {
     }
     li a:hover, li a.active{
         background: none;
-        color: red;
+        color: black;
     }
-    #chech:checked ~ ul{
+    #check:checked ~ .nav-menu{
         left:0;
     }
+
     section article {
         font-size: 25px;
         padding: 180px;
