@@ -68,7 +68,7 @@ nav {
 /*:::::Fin estilo encabezado*/
 /*:::::Inicio estilo contenido*/
 section {
-  background: url("carpinteria.jpg") no-repeat;
+  background: url("img/carpinteria.jpg") no-repeat;
   background-size: cover;
   background-position: center center; }
   section article {
@@ -80,7 +80,7 @@ section {
     text-transform: uppercase; }
 
 main {
-  background: url("carpinteria.jpg") no-repeat;
+  background: url("img/carpinteria.jpg") no-repeat;
   background-size: cover;
   background-position: center center; }
   main article {
