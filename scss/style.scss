@@ -22,7 +22,7 @@ nav{
     border-bottom: 5px solid $colorPrincipal;
     ul{
         float: right;
-        margin-right: 20px;
+        margin-right: 18px + 2; /*Operaciones*/
         li{
             display: inline-block;
             line-height: 120px;
@@ -33,7 +33,7 @@ nav{
             }
             a{
                 color: $colorTipografia1;
-                font-size: 18px;
+                font-size: 20px - 2; /*Operaciones*/
                 padding: 7px 13px;
                 border-radius: 3px;
                 text-transform: uppercase;
@@ -52,11 +52,11 @@ nav{
 }
 .animate__animated{
     height: 80px;
-    width: 240px;
+    width: 80px * 3; /*Operaciones*/
 }
 .logo{
     height: 80px;
-    width: 240px;
+    width: 80px * 3; /*Operaciones*/
 }
 
 .checkbtn{
@@ -64,7 +64,7 @@ nav{
     color: $colorTipografia1;
     float: right;
     line-height: 120px;
-    margin-right: 40px;
+    margin-right: 120px / 3; /*Operaciones*/
     cursor: pointer;
     display: none;
 }
@@ -75,7 +75,7 @@ nav{
 
 /*:::::Inicio estilo contenido*/
 section{
-    background: url(img/carpinteria.img) no-repeat;
+    background: url("carpinteria.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
     article {
@@ -88,14 +88,14 @@ section{
     }
 }
 main{
-    background: url(img/carpinteria.img) no-repeat;
+    background: url("carpinteria.jpg") no-repeat;
     background-size: cover;
     background-position: center center;
     article {
         font-size: 20px;
         padding: 20px;
         color: $colorTipografia2;
-        line-height: 40px;
+        line-height: 20px * 2; /*Operaciones*/
     }
 }
 p {
@@ -107,7 +107,7 @@ p {
 /*:::::Inicio responsive media queries*/
 @media (max-width: 952px){
     .enlace{
-        padding-left: 20px;
+        padding-left: 16px + 4; /*Operaciones*/
     }
     nav ul li a{
         font-size: 16px;
@@ -176,7 +176,7 @@ footer {
         .box h3 {
             color: $colorTipografia1;
             margin-bottom: 25px;
-            font-size: 22px;
+            font-size: 25px - 3; /*Operaciones*/
             text-align: center;
             margin-top: 10px;
             line-height: 10px;
@@ -303,7 +303,7 @@ div {
 img {
     width: 300px;
     width: 100%;
-    height: 300px;
+    height: 100px * 3; /*Operaciones*/
     border: 5px ridge $colorPrincipal;
 }
 .row {
@@ -315,7 +315,7 @@ img {
     flex: 25%;
     padding: 5px;
     img {
-        margin-top: 5px;
+        margin-top: 3px + 2; /*Operaciones*/
     }
 }
 @media (max-width:800px) {
@@ -334,7 +334,7 @@ img {
 .encontranos a {
     color: $colorTipografia1;
     padding-left: 25px;
-    padding-top: 15px;
+    padding-top: 25px - 10; /*Operaciones*/
 }
 legend {
     color: $colorPrincipal;

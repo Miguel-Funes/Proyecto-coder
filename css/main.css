@@ -17,7 +17,8 @@ nav {
   border-bottom: 5px solid #ffdd00; }
   nav ul {
     float: right;
-    margin-right: 20px; }
+    margin-right: 20px;
+    /*Operaciones*/ }
     nav ul li {
       display: inline-block;
       line-height: 120px;
@@ -28,6 +29,7 @@ nav {
       nav ul li a {
         color: white;
         font-size: 18px;
+        /*Operaciones*/
         padding: 7px 13px;
         border-radius: 3px;
         text-transform: uppercase;
@@ -42,18 +44,21 @@ nav {
 
 .animate__animated {
   height: 80px;
-  width: 240px; }
+  width: 240px;
+  /*Operaciones*/ }
 
 .logo {
   height: 80px;
-  width: 240px; }
+  width: 240px;
+  /*Operaciones*/ }
 
 .checkbtn {
   font-size: 30px;
   color: white;
   float: right;
   line-height: 120px;
-  margin-right: 40px;
+  margin-right: 120px / 3;
+  /*Operaciones*/
   cursor: pointer;
   display: none; }
 
@@ -63,7 +68,7 @@ nav {
 /*:::::Fin estilo encabezado*/
 /*:::::Inicio estilo contenido*/
 section {
-  background: url(img/carpinteria.img) no-repeat;
+  background: url("carpinteria.jpg") no-repeat;
   background-size: cover;
   background-position: center center; }
   section article {
@@ -75,14 +80,15 @@ section {
     text-transform: uppercase; }
 
 main {
-  background: url(img/carpinteria.img) no-repeat;
+  background: url("carpinteria.jpg") no-repeat;
   background-size: cover;
   background-position: center center; }
   main article {
     font-size: 20px;
     padding: 20px;
     color: black;
-    line-height: 40px; }
+    line-height: 40px;
+    /*Operaciones*/ }
 
 p {
   width: 90%;
@@ -92,7 +98,8 @@ p {
 /*:::::Inicio responsive media queries*/
 @media (max-width: 952px) {
   .enlace {
-    padding-left: 20px; }
+    padding-left: 20px;
+    /*Operaciones*/ }
   nav ul li a {
     font-size: 16px; } }
 
@@ -149,6 +156,7 @@ footer {
     color: white;
     margin-bottom: 25px;
     font-size: 22px;
+    /*Operaciones*/
     text-align: center;
     margin-top: 10px;
     line-height: 10px; }
@@ -252,6 +260,7 @@ img {
   width: 300px;
   width: 100%;
   height: 300px;
+  /*Operaciones*/
   border: 5px ridge #ffdd00; }
 
 .row {
@@ -263,7 +272,8 @@ img {
   flex: 25%;
   padding: 5px; }
   .column img {
-    margin-top: 5px; }
+    margin-top: 5px;
+    /*Operaciones*/ }
 
 @media (max-width: 800px) {
   .column {
@@ -278,7 +288,8 @@ img {
 .encontranos a {
   color: white;
   padding-left: 25px;
-  padding-top: 15px; }
+  padding-top: 15px;
+  /*Operaciones*/ }
 
 legend {
   color: #ffdd00; }
