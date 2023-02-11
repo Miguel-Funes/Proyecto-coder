@@ -1,7 +1,7 @@
 {
   "name": "proyectofunes",
   "version": "1.0.0",
-  "description": "",
+  "description": "Empresa dedicada a la manipulacion de madera y hierro, para la creacion de bienes materiales para tu hogar",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
