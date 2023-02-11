@@ -1,0 +1,57 @@
+/*:::::Inicio estilo encabezado*/ 
+/*:::::Nesting*/
+nav{
+    background: $colorSecundario;
+    height: 120px;
+    width: 100%;
+    border-bottom: 5px solid $colorPrincipal;
+    ul{
+        float: right;
+        margin-right: 18px + 2; /*Operaciones*/
+        li{
+            display: inline-block;
+            line-height: 120px;
+            margin: 0 5px;
+            a.active{
+                background: $colorPrincipal;
+                transition: .3s;
+            }
+            a{
+                color: $colorTipografia1;
+                font-size: 20px - 2; /*Operaciones*/
+                padding: 7px 13px;
+                border-radius: 3px;
+                text-transform: uppercase;
+                text-decoration: none;
+                    &:hover{
+                        background: $colorPrincipal;
+                        transition: .3s;
+                    }
+            }
+        }
+    }
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.animate__animated{
+    @include size; /*Mixin*/
+}
+.logo{
+    @include size; /*Mixin*/
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: $colorTipografia1;
+    float: right;
+    line-height: 120px;
+    margin-right: 120px / 3; /*Operaciones*/
+    cursor: pointer;
+    display: none;
+}
+ #check{
+    display: none;
+}
+/*:::::Fin estilo encabezado*/

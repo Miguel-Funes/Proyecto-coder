@@ -1,0 +1,72 @@
+/*:::::Inicio estilo pie de pagina*/
+footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+    border-top: 5px solid $colorPrincipal;
+}
+/*:::::Nesting*/
+.pie-pagina {
+    .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 0px 0px;
+        inset-block: center;
+        line-height: 20px;
+        .box h3 {
+            color: $colorTipografia1;
+            margin-bottom: 25px;
+            font-size: 25px - 3; /*Operaciones*/
+            text-align: center;
+            margin-top: 10px;
+            line-height: 10px;
+        }
+        .box p {
+            color: $colorTipografia1;
+            margin-bottom: 10px;
+        }
+        .red-social a{
+            display: inline-block;
+            text-decoration: none;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            color: $colorTipografia1;
+            margin-right: 10px;
+            transform: all 300ms ease;
+            font-size: 40px;
+            text-align: center;
+                &:hover {
+                    color: $colorPrincipal;
+                }
+        }
+    }
+    .grupo-2 {
+        background-color: $colorSecundario;
+        padding: 15px 10px;
+        text-align: center;
+        color: $colorTipografia1;
+        small {
+            font-size: 15px;
+        }
+    }
+}
+div {
+    .box {
+        @include flexContent(none, column, center); /*Mixin*/
+        p {
+            @include flexContent(none, column, center); /*Mixin*/
+        }
+    }
+    a {
+        text-decoration: none;
+        @include flexContent(center, none, none); /*Mixin*/
+    }
+    .flex-box {
+        @include flexContent(center, none, none); /*Mixin*/
+    }
+}
+/*:::::Fin estilo pie de pagina*/

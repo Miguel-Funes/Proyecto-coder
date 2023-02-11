@@ -1,0 +1,67 @@
+/*:::::Inicio responsive general*/
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 16px + 4; /*Operaciones*/
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .checkbtn{
+        display: block;
+    }
+    .nav-menu{
+        position: absolute;
+        width: 100%;
+        height: 65vh;
+        background: $colorPrincipal;
+        top: 120px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        a.active{
+            background: none;
+            color: $colorTipografia2;
+        }
+        a{
+            font-size: 20px;
+            &:hover{
+                background: none;
+                color: $colorTipografia2;
+            }
+        }
+    }
+    #check:checked ~ .nav-menu{
+        left:0;
+    }
+    section article {
+        font-size: 25px;
+        padding: 180px;
+        line-height: 80px;
+        @include flexContent(none, column, center); /*Mixin*/
+    }
+}
+
+/*:::::Inicio responsive pie de pagina*/
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 0px 0px;
+    }
+}
+
+/*:::::Inicio responsive "trabajos"*/
+@media (max-width:800px) {
+    .column {
+        flex: 100%;
+    }
+}

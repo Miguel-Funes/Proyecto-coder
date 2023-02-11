@@ -1,5 +1,6 @@
 /*Variables*/
 /*Mixins*/
+/*:::::Import*/
 /*Estilo general*/
 * {
   padding: 0;
@@ -98,51 +99,81 @@ p {
   padding-left: 20px; }
 
 /*:::::Fin estilo contenido*/
-/*:::::Inicio responsive media queries*/
-@media (max-width: 952px) {
-  .enlace {
-    padding-left: 20px;
+/*:::::inicio estilo "servicios"*/
+.boxImagenes {
+  width: 90vh;
+  height: 50vh;
+  background-color: white;
+  background-size: cover;
+  border: 5px ridge #ffdd00;
+  animation-name: boxAnimate;
+  animation-iteration-count: infinite;
+  animation-duration: 60s;
+  animation-timing-function: linear; }
+
+/*:::::Animacion*/
+@keyframes boxAnimate {
+  0% {
+    background-image: url(img/titulo.png); }
+  10% {
+    background-image: url(img/photo2.jpeg); }
+  20% {
+    background-image: url(img/photo3.jpeg); }
+  30% {
+    background-image: url(img/photo4.jpeg); }
+  40% {
+    background-image: url(img/photo1.jpeg); }
+  50% {
+    background-image: url(img/photo7.jpeg); }
+  60% {
+    background-image: url(img/photo8.jpeg); }
+  70% {
+    background-image: url(img/photo9.jpeg); }
+  80% {
+    background-image: url(img/photo11.jpeg); }
+  90% {
+    background-image: url(img/photo13.jpeg); }
+  100% {
+    background-image: url(img/photo5.jpeg); } }
+
+/*:::::Fin estilo "servicios"*/
+/*:::::Estilo fotoPerfil "sobremi"*/
+.fotoPerfil {
+  width: 400px;
+  height: 400px; }
+
+/*:::::inicio estilo "trabajos"*/
+img {
+  width: 300px;
+  width: 100%;
+  height: 300px;
+  /*Operaciones*/
+  border: 5px ridge #ffdd00; }
+
+.row {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap; }
+
+.column {
+  flex: 25%;
+  padding: 5px; }
+  .column img {
+    margin-top: 5px;
     /*Operaciones*/ }
-  nav ul li a {
-    font-size: 16px; } }
 
-@media screen and (max-width: 800px) {
-  .checkbtn {
-    display: block; }
-  .nav-menu {
-    position: absolute;
-    width: 100%;
-    height: 65vh;
-    background: #ffdd00;
-    top: 120px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s; }
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px; }
-    nav ul li a.active {
-      background: none;
-      color: black; }
-    nav ul li a {
-      font-size: 20px; }
-      nav ul li a:hover {
-        background: none;
-        color: black; }
-  #check:checked ~ .nav-menu {
-    left: 0; }
-  section article {
-    font-size: 25px;
-    padding: 180px;
-    line-height: 80px;
-    display: flex;
-    justify-content: none;
-    flex-direction: column;
-    align-items: center;
-    /*Mixin*/ } }
+/*:::::fin estilo "trabajos"*/
+/*:::::inicio estilo "contacto"*/
+.encontranos a {
+  color: white;
+  padding-left: 25px;
+  padding-top: 15px;
+  /*Operaciones*/ }
 
-/*:::::Fin responsive media queries*/
+legend {
+  color: #ffdd00; }
+
+/*:::::fin estilo "contacto"*/
 /*:::::Inicio estilo pie de pagina*/
 footer {
   width: 100%;
@@ -222,6 +253,50 @@ div .flex-box {
   /*Mixin*/ }
 
 /*:::::Fin estilo pie de pagina*/
+/*:::::Inicio responsive general*/
+@media (max-width: 952px) {
+  .enlace {
+    padding-left: 20px;
+    /*Operaciones*/ }
+  nav ul li a {
+    font-size: 16px; } }
+
+@media screen and (max-width: 800px) {
+  .checkbtn {
+    display: block; }
+  .nav-menu {
+    position: absolute;
+    width: 100%;
+    height: 65vh;
+    background: #ffdd00;
+    top: 120px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s; }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px; }
+    nav ul li a.active {
+      background: none;
+      color: black; }
+    nav ul li a {
+      font-size: 20px; }
+      nav ul li a:hover {
+        background: none;
+        color: black; }
+  #check:checked ~ .nav-menu {
+    left: 0; }
+  section article {
+    font-size: 25px;
+    padding: 180px;
+    line-height: 80px;
+    display: flex;
+    justify-content: none;
+    flex-direction: column;
+    align-items: center;
+    /*Mixin*/ } }
+
 /*:::::Inicio responsive pie de pagina*/
 @media screen and (max-width: 800px) {
   .pie-pagina .grupo-1 {
@@ -230,86 +305,7 @@ div .flex-box {
     grid-gap: 30px;
     padding: 0px 0px; } }
 
-/*:::::Fin responsive pie de pagina*/
-/*:::::inicio estilo "servicios"*/
-.boxImagenes {
-  width: 90vh;
-  height: 50vh;
-  background-color: white;
-  background-size: cover;
-  border: 5px ridge #ffdd00;
-  animation-name: boxAnimate;
-  animation-iteration-count: infinite;
-  animation-duration: 60s;
-  animation-timing-function: linear; }
-
-@keyframes boxAnimate {
-  0% {
-    background-image: url(img/titulo.png); }
-  10% {
-    background-image: url(img/photo2.jpeg); }
-  20% {
-    background-image: url(img/photo3.jpeg); }
-  30% {
-    background-image: url(img/photo4.jpeg); }
-  40% {
-    background-image: url(img/photo1.jpeg); }
-  50% {
-    background-image: url(img/photo7.jpeg); }
-  60% {
-    background-image: url(img/photo8.jpeg); }
-  70% {
-    background-image: url(img/photo9.jpeg); }
-  80% {
-    background-image: url(img/photo11.jpeg); }
-  90% {
-    background-image: url(img/photo13.jpeg); }
-  100% {
-    background-image: url(img/photo5.jpeg); } }
-
-/*:::::Fin estilo "servicios"*/
-/*:::::Estilo fotoPerfil "sobremi"*/
-.fotoPerfil {
-  width: 400px;
-  height: 400px; }
-
-/*:::::inicio estilo "trabajos"*/
-img {
-  width: 300px;
-  width: 100%;
-  height: 300px;
-  /*Operaciones*/
-  border: 5px ridge #ffdd00; }
-
-.row {
-  display: flex;
-  padding: 5px;
-  flex-wrap: wrap; }
-
-.column {
-  flex: 25%;
-  padding: 5px; }
-  .column img {
-    margin-top: 5px;
-    /*Operaciones*/ }
-
-@media (max-width: 800px) {
-  .column {
-    flex: 50%; } }
-
+/*:::::Inicio responsive "trabajos"*/
 @media (max-width: 800px) {
   .column {
     flex: 100%; } }
-
-/*:::::fin estilo "trabajos"*/
-/*:::::inicio estilo "contacto"*/
-.encontranos a {
-  color: white;
-  padding-left: 25px;
-  padding-top: 15px;
-  /*Operaciones*/ }
-
-legend {
-  color: #ffdd00; }
-
-/*:::::fin estilo "contacto"*/
