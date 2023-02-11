@@ -72,7 +72,7 @@ ul li a {
 /*:::::Fin estilo encabezado*/
 /*:::::Inicio estilo contenido*/
 section{
-    background: url(img/carpinteria.img) no-repeat;
+    background: url(css/img/carpinteria.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
 }
@@ -226,7 +226,7 @@ div a {
 /*:::::Fin responsive pie de pagina*/
 /*:::::inicio estilo "servicios" sin terminar*/
 main{
-    background: url(img/carpinteria.img) no-repeat;
+    background: url(css/img/carpinteria.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
 }

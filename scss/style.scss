@@ -4,6 +4,18 @@ $colorSecundario: rgba(58, 57, 57, 0.498);
 $colorTipografia1: white;
 $colorTipografia2: black;
 
+/*Mixins*/
+@mixin size{
+    height: 80px;
+    width: 80px * 3; /*Operaciones*/
+}
+@mixin flexContent($justify, $flex, $align){
+    display: flex;
+    justify-content: $justify;
+    flex-direction: $flex;
+    align-items: $align;
+}
+
 /*Estilo general*/
 *{
     padding: 0;
@@ -51,12 +63,10 @@ nav{
     padding: 20px 50px;
 }
 .animate__animated{
-    height: 80px;
-    width: 80px * 3; /*Operaciones*/
+    @include size; /*Mixin*/
 }
 .logo{
-    height: 80px;
-    width: 80px * 3; /*Operaciones*/
+    @include size; /*Mixin*/
 }
 
 .checkbtn{
@@ -132,25 +142,26 @@ p {
         display: block;
         margin: 50px 0;
         line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    li a:hover, li a.active{
-        background: none;
-        color: $colorTipografia2;
+        a.active{
+            background: none;
+            color: $colorTipografia2;
+        }
+        a{
+            font-size: 20px;
+            &:hover{
+                background: none;
+                color: $colorTipografia2;
+            }
+        }
     }
     #check:checked ~ .nav-menu{
         left:0;
     }
-
     section article {
         font-size: 25px;
         padding: 180px;
         line-height: 80px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flexContent(none, column, center); /*Mixin*/
     }
 }
 /*:::::Fin responsive media queries*/
@@ -213,23 +224,17 @@ footer {
 }
 div {
     .box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flexContent(none, column, center); /*Mixin*/
         p {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flexContent(none, column, center); /*Mixin*/
         }
     }
     a {
         text-decoration: none;
-        display: flex;
-        justify-content: center;
+        @include flexContent(center, none, none); /*Mixin*/
     }
     .flex-box {
-        display: flex;
-        justify-content: center;
+        @include flexContent(center, none, none); /*Mixin*/
     }
 }
 /*:::::Fin estilo pie de pagina*/
@@ -339,5 +344,4 @@ img {
 legend {
     color: $colorPrincipal;
 }
-
 /*:::::fin estilo "contacto"*/ 
