@@ -10,6 +10,12 @@ section{
         padding: 160px;
         line-height: 100px;
         text-transform: uppercase;
+        @include mobile{ /*Responsive*/
+            font-size: 25px;
+            padding: 180px;
+            line-height: 80px;
+            @include flexContent(none, column, center); /*Mixin*/
+        }
     }
 }
 main{
@@ -98,6 +104,9 @@ img {
 .column {
     flex: 25%;
     padding: 5px;
+    @include mobile{
+        flex: 100%; /*Responsive*/
+    }
     img {
         margin-top: 3px + 2; /*Operaciones*/
     }

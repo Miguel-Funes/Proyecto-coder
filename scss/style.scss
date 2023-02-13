@@ -15,11 +15,19 @@ $colorTipografia2: black;
     flex-direction: $flex;
     align-items: $align;
 }
-
+@mixin tablet{
+    @media screen and (max-width: 952px){
+        @content;
+    }
+}
+@mixin mobile{
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
 /*:::::Import*/
 @import "general";
 @import "encabezado";
 @import "contenido";
 @import "footer";
-@import "responsive";
   
