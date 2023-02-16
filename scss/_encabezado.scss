@@ -86,6 +86,7 @@ nav{
     display: none;
     @include mobile{ /*Responsive*/
         display: block;
+        padding-right: 16px + 4; /*Operaciones*/
     }
 }
 #check{
