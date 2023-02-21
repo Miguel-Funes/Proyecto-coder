@@ -58,6 +58,10 @@ p {
     border-top: $borde1px;
     border-left: $borde1px;
     border-bottom: $borde1px;
+    @include tablet{ /*Responsive*/
+        border-right: $borde1px;
+        border-bottom: none;
+    }
     @include mobile{ /*Responsive*/
         border-right: $borde1px;
         border-bottom: none;
@@ -70,6 +74,10 @@ p {
     border-top: $borde1px;
     border-right: $borde1px;
     border-bottom: $borde1px;
+    @include tablet{ /*Responsive*/
+        border-left: $borde1px;
+        border-top: none;
+    }
     @include mobile{ /*Responsive*/
         border-left: $borde1px;
         border-top: none;
