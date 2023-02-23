@@ -121,6 +121,11 @@ nav {
     /*Responsive*/
     left: 0; } }
 
+@media screen and (max-width: 1024px) {
+  #check:checked ~ .nav-menu {
+    /*Responsive*/
+    left: 0; } }
+
 /*:::::Fin estilo encabezado*/
 /*:::::Inicio estilo contenido*/
 section {
@@ -157,10 +162,8 @@ main {
     line-height: 40px;
     /*Operaciones*/ }
 
-@media screen and (max-width: 768px) {
-  h2 {
-    /*Responsive*/
-    text-align: center; } }
+h2 {
+  text-align: center; }
 
 p {
   width: 90%;
@@ -270,8 +273,11 @@ img {
 
 .row {
   display: flex;
-  padding: 5px;
+  padding: 10px 25px;
   flex-wrap: wrap; }
+  @media screen and (max-width: 768px) {
+    .row {
+      padding: 10px 40px; } }
 
 .column {
   flex: 25%;

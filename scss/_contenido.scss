@@ -30,9 +30,7 @@ main{
     }
 }
 h2{
-    @include mobile{ /*Responsive*/
-        text-align: center;
-    }
+    text-align: center;
 }
 p {
     width: 90%;
@@ -148,8 +146,11 @@ img {
 }
 .row {
     display: flex;
-    padding: 5px;
+    padding: 10px 25px;
     flex-wrap: wrap;
+    @include mobile{
+        padding: 10px 40px;
+    }
 }
 .column {
     flex: 25%;

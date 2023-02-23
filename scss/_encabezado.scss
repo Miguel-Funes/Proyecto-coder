@@ -96,5 +96,8 @@ nav{
     @include mobile{ /*Responsive*/
     left:0;
     }
+    @include tablet{ /*Responsive*/
+        left:0;
+        }
 }
 /*:::::Fin estilo encabezado*/
