@@ -277,7 +277,7 @@ img {
   flex-wrap: wrap; }
   @media screen and (max-width: 768px) {
     .row {
-      padding: 10px 40px; } }
+      padding: 10px 35px; } }
 
 .column {
   flex: 25%;
